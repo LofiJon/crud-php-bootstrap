@@ -45,7 +45,7 @@
  </div>
 <br>
 <?php require_once 'conecta.php' ?> <!--conecta ao banco--> 
-  <input type="hidden" name="nome" value="<?php echo $id ?>">
+  <input type="hidden" name="nome" value="<?php echo $id; ?>">
 <?php 
     if(isset($_SESSION['msg'])):?>
 
