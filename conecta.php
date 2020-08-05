@@ -3,7 +3,7 @@
     session_start();
 
    
-    $mysqli = new mysqli('localhost','root','','emporio_dados') or die(mysqli_error($mysqli));
+    $mysqli = new mysqli('localhost','root','','nomeDoBanco') or die(mysqli_error($mysqli));
     $id = 0;
     $update = false;
 
