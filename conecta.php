@@ -56,7 +56,7 @@
      $endereco = $_POST['endereco'];
      $senha = $_POST['senha'];
 
-     $mysqli->query("UPDATE usuarios SET nome='$nome', endereco='$endereco', email='$endereco', WHERE id=$id") 
+     $mysqli->query = "UPDATE usuarios SET nome='$nome', endereco='$endereco', email='$endereco', WHERE id=$id"; 
        or die($mysqli->error);
 
      $_SESSION['msg'] = "Atualizado ";
@@ -67,5 +67,5 @@
  
  }
    
-
+//fim do codigo, agr é só correr pro abraço
 ?>
