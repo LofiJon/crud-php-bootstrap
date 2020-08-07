@@ -39,7 +39,7 @@
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
-        $result = $mysqli->query("SELECT *FROM usuarios WHERE id=$id") or die($mysqli->error());
+        $result = $mysqli->query = "SELECT *FROM usuarios WHERE id=$id" or die($mysqli->error());
         if($result->num_rows){
             $row = $result->fetch_array();
                  $nome = $row['nome'];
