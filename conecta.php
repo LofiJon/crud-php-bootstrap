@@ -17,7 +17,7 @@
         $endereco = $_POST['endereco'];
         $senha = $_POST['senha'];
 
-        $mysqli-> query("INSERT INTO usuarios (nome,email,endereco,senha) VALUES( '$nome','$email','$endereco','$senha')") 
+        $mysqli-> query = "INSERT INTO usuarios (nome,email,endereco,senha) VALUES( '$nome','$email','$endereco','$senha')"  
           or die($mysqli ->error);
 
           $_SESSION['msg'] = "Usuário cadastrado";
@@ -28,7 +28,7 @@
 
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
-        $mysqli->query("DELETE FROM usuarios WHERE  id=$id") or die($mysqli->error());
+        $mysqli->query = "DELETE FROM usuarios WHERE  id=$id"  or die($mysqli->error());
         $_SESSION['msg'] = "Usuário deletado";
         $_SESSION['msg_type'] ="danger";
 
